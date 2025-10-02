@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.dist-info/
+.venv/
+venv/
+env/
+gurobi-env/
+.DS_Store
+.vscode/
+
+gurobi.log
