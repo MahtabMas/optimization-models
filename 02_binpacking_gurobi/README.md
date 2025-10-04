@@ -6,12 +6,10 @@ A small example of binpacking model in Gurobi. packing items into bins in a way 
 
 How I set it up
 
-Variables: x[i,j] x\in {0,1}     //item i is assigned to bin j
-
+Variables: x[i,j] x\in {0,1}     //item i is assigned to bin j;
            y[j]   y\in {0,1}    // bin j is used
 
-Constraints: sum(sizes[i] * x[i,j]) <= C * y[j] // total weight in each bin
-
+Constraints: sum(sizes[i] * x[i,j]) <= C * y[j] // total weight in each bin;
              sum(x[i,j] == 1)                  //  item packed in one bin 
 
 
